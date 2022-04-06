@@ -1,0 +1,82 @@
+/* General */
+
+body {
+  background-color: #09192b;
+  font-family: "VT323", monospace;
+  margin-top: 30px;
+  margin-right: 60px;
+  margin-left: 60px;
+  color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content:center;
+}
+
+.nav-element {
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-element a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-element img {
+  align-self: center;
+}
+
+.nav-element__brand{
+    display:flex;
+}
+
+.nav-element__brand a{
+    color: #775ADA;
+    margin-left: 8px;
+}
+
+.nav-element__list {
+
+}
+
+/* Main */
+main{
+    margin-left: 75px;
+    margin-top: 75px;
+    height: 100%;
+}
+
+main h1{
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+
+main p img{
+    position: relative;
+    right: 115px;
+    z-index: -99;
+}
+
+main .introduction__text p{
+    max-width: 400px;
+    color: rgba(255, 255,  255, 0.1 );
+    font-size:22px;
+    line-height: 23px;
+}
+
+main .introduction__text p span{
+    color: white;
+}
+
+.introduction{
+    display: flex;
+    justify-content: space-between;
+}
+.introduction .mercimek{
+    position: relative;
+    align-self: center;
+}
