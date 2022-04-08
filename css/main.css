@@ -4,15 +4,15 @@ body {
   background-color: #09192b;
   font-family: "VT323", monospace;
   margin-top: 30px;
-  margin-right: 60px;
-  margin-left: 60px;
+  margin-right: 0px;
+  margin-left: 0px;
   color: white;
 }
 
 /* Navbar */
 nav {
     display: flex;
-    justify-content:center;
+    justify-content:space-around;
 }
 
 .nav-element {
@@ -24,6 +24,7 @@ nav {
 .nav-element a {
   text-decoration: none;
   color: white;
+  padding-left: 20px;
 }
 
 .nav-element img {
@@ -45,7 +46,6 @@ nav {
 
 /* Main */
 main{
-    margin-left: 75px;
     margin-top: 75px;
     height: 100%;
 }
@@ -55,9 +55,18 @@ main h1{
     margin-bottom: 0px;
 }
 
+#handsup{
+    width: 55px;
+    position: relative;
+    right: 20px;
+    top: 10px;
+}
+
+/* Keyword highlight */
 main p img{
     position: relative;
     right: 115px;
+    bottom: -6px;
     z-index: -99;
 }
 
@@ -74,9 +83,43 @@ main .introduction__text p span{
 
 .introduction{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 0 55px;
 }
+
 .introduction .mercimek{
     position: relative;
-    align-self: center;
+    right: 50px;
+}
+
+.introduction .mercimek img{
+    width: 300px;
+}
+
+#heart{
+    width:25px;
+    position: relative;
+    bottom: 31px;
+    left: 255px;
+    transform: rotate(25deg);
+}
+
+/* Bigger keyword */
+main h2{
+    position: relative;
+    left: 500px;
+    bottom: 30px;
+}
+
+#bigger-keyword-highlight{
+    position: absolute;
+    z-index: -99;
+    bottom: -27px;
+    left: -50px;
+}
+
+/* Dividers */
+.divider{
+    display: flex;
+    justify-content: center;
 }
