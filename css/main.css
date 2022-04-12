@@ -107,9 +107,8 @@ main .introduction__text p span{
 
 /* Bigger keyword */
 main h2{
-    position: relative;
+    position: absolute;
     left: 500px;
-    bottom: 30px;
 }
 
 #bigger-keyword-highlight{
@@ -121,6 +120,28 @@ main h2{
 
 /* Dividers */
 .divider{
-    position: absolute;
-    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Icons img */
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.icons img {
+    width: 100px;
+    margin: 0;
+}
+
+/* ABOUT ME */
+.about-me{
+}
+
+.portrait{
+    width: 300px;
 }
