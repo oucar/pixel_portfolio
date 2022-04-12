@@ -64,7 +64,7 @@ main h1{
     width: 55px;
     position: relative;
     right: 20px;
-    top: 10px;
+    top: 0px;
 }
 
 /* Keyword highlight */
@@ -147,7 +147,6 @@ main h2{
 
 /* ABOUT ME */
 .about-me{
-    background-color: aliceblue;
     margin-top:150px;
     color: black;
     display: flex;
@@ -172,6 +171,7 @@ main h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 150px;
 }
 
 .projects h2{
@@ -194,6 +194,11 @@ main h2{
     margin: 15px;
 }
 
+/* .project-items .nes-container:hover{
+    background-color: aliceblue;
+    transition: 0.s;
+} */
+
 .project-items .nes-container img{
     width: 200px;
 }
@@ -204,3 +209,25 @@ main h2{
 
 
 /* Contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 125px;
+}
+
+.contact p{
+    width: 70%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    margin-left: 10px;
+    margin-right: 10px;
+}
