@@ -51,7 +51,7 @@ nav {
 /* Main */
 main{
     margin-top: 75px;
-    height: 85vh;
+    height: 90%;
     position: relative;
 }
 
@@ -147,7 +147,8 @@ main h2{
 
 /* ABOUT ME */
 .about-me{
-    margin-top:100px;
+    background-color: aliceblue;
+    margin-top:150px;
     color: black;
     display: flex;
     flex-direction: row;
@@ -158,9 +159,48 @@ main h2{
     width: 600px;
     position: relative;
     top: -75px;
+    background-color: #e4dff7;
 }
 .portrait{
     width: 300px;
 }
 
 /* Projects */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects h2{
+    font-size: 40px;
+    margin-bottom: 75px;
+}
+
+.project-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0 0px;
+}
+
+.project-items .nes-container{
+    display: flex;
+    background-color: #09192b;
+    align-self: flex-start;
+    margin: 15px;
+}
+
+.project-items .nes-container img{
+    width: 200px;
+}
+
+.project-items .nes-container p{
+    margin: 15px;
+}
+
+
+/* Contact */
