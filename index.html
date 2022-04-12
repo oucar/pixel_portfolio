@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onur Ucar</title>
 
+    <!-- NES CSS -->
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/dividers.css">
@@ -16,7 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!-- NES CSS -->
+
+
 
 </head>
 
@@ -27,9 +30,9 @@
             <a href="#">oucar</a>
         </div>
         <div class="nav-element nav-element__list">
-            <a href="#">About Me</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#about-me">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
@@ -78,8 +81,27 @@
     </main>
 
 
-    <div class="about-me">
-        <img class="portrait"src="./img/Portrait.png">
+    <div id="about-me" class="about-me">
+        <img class="portrait"src="./img/Portrait.png" onmouseover="this.src='./img/Portrait_Smile.png';" onmouseout="this.src='./img/Portrait.png';">
+
+        <section class="message -left">
+            <!-- Balloon -->
+            <div class="nes-balloon from-left">
+                <h2>About me</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magni obcaecati dolor nostrum, dicta nisi sed magnam excepturi eum dolores blanditiis esse saepe. Odio sapiente voluptas tempore nostrum numquam blanditiis.
+              Eaque quas fuga laborum nulla odit maiores perferendis placeat doloremque sed enim praesentium, modi recusandae non mollitia corrupti ducimus animi ab eum, expedita commodi excepturi necessitatibus explicabo. Eveniet, expedita accusantium.
+            </p>
+            </div>
+          </section>
+          
+    </div>
+
+    <div class="divider">
+        <div class="separator02"></div>
+    </div>
+
+    <div class="projects" id="projects">
+        <h1>Projects</h1>
     </div>
 
 
