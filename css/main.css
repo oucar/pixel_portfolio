@@ -110,17 +110,17 @@ main .introduction__text p span{
 }
 
 /* Bigger keyword */
+
 main h2{
-    position: absolute;
-    left: 500px;
-}
+    position: relative;
+    left: 200px;
+} 
 
 #bigger-keyword-highlight{
-    position: absolute;
+    position: relative;
     z-index: -99;
-    bottom: -27px;
-    left: -50px;
-}
+    left: 140px;
+} 
 
 /* Dividers */
 .divider{
