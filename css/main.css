@@ -1,7 +1,7 @@
 /* General */
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,8 +15,8 @@ body {
 
 /* Navbar */
 nav {
-    display: flex;
-    justify-content:space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav-element {
@@ -35,199 +35,268 @@ nav {
   align-self: center;
 }
 
-.nav-element__brand{
-    display:flex;
+.nav-element__brand {
+  display: flex;
 }
 
-.nav-element__brand a{
-    color: #775ADA;
-    margin-left: 8px;
+.nav-element__brand a {
+  color: #775ada;
+  margin-left: 8px;
 }
 
-.nav-element__list {
-
+.nav-element__brand a:hover {
+  color: white;
+  transition: 0.1s;
 }
 
 /* Main */
-main{
-    margin-top: 75px;
-    height: 90%;
-    position: relative;
+main {
+  margin-top: 75px;
+  height: 90%;
+  position: relative;
 }
 
-main h1{
-    font-size: 70px;
-    margin-bottom: 0px;
+main h1 {
+  font-size: 70px;
+  margin-bottom: 0px;
 }
 
-#handsup{
-    width: 55px;
-    position: relative;
-    right: 20px;
-    top: 0px;
+#handsup {
+  width: 55px;
+  position: relative;
+  right: 20px;
+  top: 0px;
 }
 
 /* Keyword highlight */
-main p img{
-    position: relative;
-    right: 115px;
-    bottom: -6px;
-    z-index: -99;
+main p img {
+  position: relative;
+  right: 115px;
+  bottom: -6px;
+  z-index: -99;
 }
 
-main .introduction__text p{
-    max-width: 400px;
-    color: rgba(255, 255,  255, 0.1 );
-    font-size:22px;
-    line-height: 23px;
+main .introduction__text p {
+  max-width: 400px;
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 22px;
+  line-height: 23px;
 }
 
-main .introduction__text p span{
-    color: white;
+main .introduction__text p span {
+  color: white;
 }
 
-.introduction{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 55px;
+.introduction {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 55px;
 }
 
-.introduction .mercimek .microkorg{
-    position: relative;
-    right: 50px;
+.introduction .mercimek .microkorg {
+  position: relative;
+  right: 50px;
 }
 
-.introduction .microkorg img{
-    width: 450px;
+.introduction .microkorg img {
+  width: 450px;
 }
 
-#heart{
-    width:25px;
-    position: relative;
-    bottom: 31px;
-    left: 255px;
-    transform: rotate(25deg);
+#heart {
+  width: 25px;
+  position: relative;
+  bottom: 31px;
+  left: 255px;
+  transform: rotate(25deg);
 }
 
 /* Bigger keyword */
 
-main h2{
-    position: relative;
-    left: 200px;
-} 
+main h2 {
+  position: relative;
+  left: 200px;
+}
 
-#bigger-keyword-highlight{
-    position: relative;
-    z-index: -99;
-    left: 140px;
-} 
+#bigger-keyword-highlight {
+  position: relative;
+  z-index: -99;
+  left: 140px;
+}
 
 /* Dividers */
-.divider{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 100px;
-    margin-top:100px;
-
+.divider {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 /* Icons img */
-.icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 150px;
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 150px;
 }
 
 .icons img {
-    width: 100px;
-    margin: 0;
+  width: 100px;
+  margin: 0;
 }
 
 /* ABOUT ME */
-.about-me{
-    margin-top:150px;
-    color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+.about-me {
+  margin-top: 150px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .nes-balloon {
-    width: 600px;
-    position: relative;
-    top: -75px;
-    background-color: #e4dff7;
+  width: 600px;
+  position: relative;
+  top: -75px;
+  background-color: #e4dff7;
 }
-.portrait{
-    width: 300px;
+.portrait {
+  width: 300px;
 }
 
 /* Projects */
 
 .projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
 }
 
-.projects h2{
-    font-size: 40px;
-    margin-bottom: 75px;
+.projects h2 {
+  font-size: 40px;
+  margin-bottom: 75px;
 }
 
-.project-items{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin:0 0px;
+.project-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 0px;
 }
 
-.project-items .nes-container{
-    display: flex;
-    background-color: #09192b;
-    align-self: flex-start;
-    margin: 15px;
+/* each project */
+.project-items .nes-container {
+  display: flex;
+  background-color: #09192b;
+  align-self: flex-start;
+  margin: 15px;
+  margin-bottom: 30px;
+  flex-direction: column;
+  width: 600px;
 }
 
-/* .project-items .nes-container:hover{
-    background-color: aliceblue;
-    transition: 0.s;
-} */
-
-.project-items .nes-container img{
-    width: 200px;
+.project-items .nes-container:hover {
+  background-color: #0d233b;
+  transition: 0.3s;
 }
 
-.project-items .nes-container p{
-    margin: 15px;
+/* project images */
+.project-items .nes-container img {
+  width: 300px;
+  align-self: center;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
+.project-items .nes-container .project-info {
+  margin: 15px;
+}
 
 /* Contact */
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 125px;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 125px;
 }
 
-.contact p{
-    width: 70%;
-    text-align: center;
-    margin-bottom: 30px;
+.contact p {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.social-icons{
-    display: flex;
-    justify-content: center;
+.social-icons {
+  display: flex;
+  justify-content: center;
 }
 
 .social-icons i {
-    margin-left: 10px;
-    margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.end {
+  margin-top: 30px;
+}
+
+/* ##### MEDIA QUERIES ##### */
+
+/* Under 1350 (for tablets) */
+@media (max-width: 1350px) {
+  .introduction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .introduction .microkorg img {
+    width: 350px;
+    position: relative;
+    bottom: 70px;
+  }
+
+  /* each project */
+  .project-items .nes-container {
+    width: 750px;
+  }
+}
+
+/* TODO: ADD HAMBURGER MENU */
+
+/* Under  1024 (for smartphones) */
+@media (max-width: 1024px) {
+  body {
+    background-color:#0d233b;
+  }
+
+  main{
+      width: 100%;
+  }
+
+  .introduction{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+
+  main .introduction__text p{
+      max-width: 100%;
+  }
+
+  .introduction__text{
+    width: 100%;
+  }
+
+  .introduction .microkorg img {
+    display: none;
+  }
+
+  .icons img{
+      width: 75px;
+  }
 }
