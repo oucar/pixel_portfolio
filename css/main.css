@@ -5,9 +5,9 @@ html {
 }
 
 body {
-  background-color: #09192b;
-  font-family: "VT323", monospace;
-  color: white;
+  background-color: #09192b !important;
+  font-family: "VT323", monospace !important;
+  color: white !important;
   margin-top: 30px;
   margin-right: 0px;
   margin-left: 0px;
@@ -17,36 +17,40 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
-}
-
-.nav-element {
   font-size: 40px;
-  justify-content: center;
-  align-items: center;
 }
 
-.nav-element a {
+.navbar-brand{
+  font-size: 40px !important;
+}
+
+.navbar-brand a{
+  color: #775ada !important;
+  text-decoration: none;
+}
+
+.navbar-nav li a{
+  text-decoration: none !important;
+  font-size: 40px;
+}
+
+.navbar-brand a:hover {
+  color: white !important;
+  transition: 0.1s;
+}
+
+nav a {
   text-decoration: none;
   color: white;
   padding-left: 20px;
 }
 
-.nav-element img {
-  align-self: center;
-}
-
-.nav-element__brand {
+.main-nav{
   display: flex;
-}
+  justify-content: space-around;
 
-.nav-element__brand a {
-  color: #775ada;
-  margin-left: 8px;
-}
-
-.nav-element__brand a:hover {
-  color: white;
-  transition: 0.1s;
+  flex-direction: row;
+  width: 100%;
 }
 
 /* Main */
@@ -163,6 +167,10 @@ main h2 {
   width: 300px;
 }
 
+.mobile-balloon{
+  display: none;
+}
+
 /* Projects */
 
 .projects {
@@ -252,6 +260,10 @@ main h2 {
     align-items: center;
   }
 
+  .main-nav{
+    flex-direction: column;
+  }
+
   .introduction .microkorg img {
     width: 350px;
     position: relative;
@@ -268,10 +280,67 @@ main h2 {
 
 /* Under  1024 (for smartphones) */
 @media (max-width: 1024px) {
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
   /* CUSTOM CHANGES TO CSS */
+  nav, .nav-element__list{
+    display: flex;
+    flex-direction: row;
+  }
+
+  
 
   body {
     background-color: #0d233b;
+    font-family: "VT323", monospace;
   }
 
   main {
@@ -297,7 +366,13 @@ main h2 {
     max-width: 70%;
   }
 
+
+  #handsup{
+    display: none;
+  }
+
   .introduction__text {
+    text-align: center;
     width: 100%;
   }
 
@@ -316,15 +391,45 @@ main h2 {
     display: none;
   }
 
-  .nes-balloon{
-    width: 60%;
-  }
+
 
   .project-items .nes-container{
     width: 90%;
   }
 
+  .icons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
   .icons img {
     width: 75px;
   }
+
+  .about-me{
+    margin: 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portrait{  
+    width: 200px !important;
+  }
+
+  .message{
+    width: 10px;
+    display: none;
+  }
+
+  .mobile-balloon{
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 10px 20px;
+  }
+
 }
